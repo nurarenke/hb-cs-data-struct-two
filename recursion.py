@@ -14,7 +14,13 @@ def print_item(my_list, i=0):
         >>> print_item([])
 
     """
-    pass
+    if i >= len(my_list):
+        return
+
+    print my_list[i]
+    i += 1
+    return print_item(my_list, i)
+    
 
 
 # 2. Write a function that uses recursion to print each node in a tree.
@@ -41,7 +47,13 @@ def print_all_tree_data(tree):
         3
 
     """
-    pass
+    print tree.data 
+
+    if not tree.children:
+        return
+
+    for child in tree.children:
+        print_all_tree_data(child)
 
 # 3. Write a function that uses recursion to find the length of a list.
 
@@ -52,7 +64,13 @@ def list_length(my_list):
         4
 
     """
-    pass
+
+    # I got the idea from stack overflow: 
+    #https://stackoverflow.com/questions/14326460/get-length-of-list-in-python-using-recursion
+    if not my_list:
+        return 0
+
+    return 1 + list_length(my_list[1:])
 
 
 # 4. Write a function that uses recursion to count how many nodes are in a tree.
