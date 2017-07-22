@@ -1,0 +1,41 @@
+Recursion:
+1. Recursion is when a function calls itself multiple number of times until it 
+    reaches it's base case, then it returns until it reaches the beginning of the 
+    function call stack
+
+2. The base case is necessary, because it tells the function when to stop calling itself.
+
+Graphs:
+1. Graphs are made of nodes and edges that link the nodes together based on relationships
+ that are either directed or undirected.
+
+2. Trees are a more restricted version of graphs and have a parent and child relationship 
+    and that relationship is acyclic. Graphs are uni-directional and can be cyclic or acyclic.
+
+3. My project of a seating chart would be a good example. You have nodes of people who have 
+    relationships with other people with which they want to sit with.
+
+Performance of Different Data Structures:
+1. Python List (Array): 
+    Add-L: O(n), Pop-L: O(n), O(1)
+
+2. Linked List:
+    Index: O(n), Search: O(n), Add-R: O(1), Add-L: O(1), Pop-L: O(1), Pop-R: O(n)
+
+3. Doubly-Linked List:
+    Index: O(n), Search: O(n), Add-R: O(1), Add-L: O(1), Pop-L: O(1), Pop-R: O(1)
+
+4. Queue (as Array):
+    Add-R: O(1), Pop-L: O(n),
+
+5. Queue (as LL or DLL): 
+    Add-R: O(1), Pop-L:O(1)
+
+6. Stack (as Array, LL, or DLL):
+    Add-R: O(1), Pop-R: O(1)
+
+7. Deque(as DLL):
+    Add-R: O(1), Add-L: O(1), Pop-L: O(1), Pop-R: O(1)
+
+
+
