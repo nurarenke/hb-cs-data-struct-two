@@ -109,7 +109,7 @@ def num_nodes(tree):
     count = 1
 
     for child in tree.children:
-        #this return 1 each time and counts up all the ones when each function returns
+        #this returns 1 each time and counts up all the ones when each function returns
         count += num_nodes(child)
     return count
 
