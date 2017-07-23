@@ -103,8 +103,15 @@ def num_nodes(tree):
         >>> num_nodes(one)
         6
     """
+    if not tree:
+        return 0
 
-    pass
+    count = 1
+
+    for child in tree.children:
+        #this return 1 each time and counts up all the ones when each function returns
+        count += num_nodes(child)
+    return count
 
 #####################################################################
 # END OF ASSIGNMENT: You can ignore everything below.
